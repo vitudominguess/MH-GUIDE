@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter | Guide</title>
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="./MHC.css">
+    <link rel="stylesheet" type="text/css" href="./table.css">
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "../icon.png"/>
+    <link rel="stylesheet" type="text/css" href="">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+
+    <!--DATA TABLE-->
+    <script type="text/javascript" language="javascript">
+      $(document).ready(function() {
+        $('#listar_item').DataTable({
+          "language": {
+      "search": "Buscar:",
+		  "paginate": {
+        "first": "Inicio",
+        "last": "Fim",
+			  "previous": "Anterior",
+			  "next": "Próximo"
+		  },
+      "aria": {
+        "sortAscending":  ": ative para classificar a coluna em ordem crescente",
+        "sortDescending": ": ative para classificar a coluna em ordem decrescente"
+      },
+      "lengthMenu": '<select>'+
+        '<option value="10">10</option>'+
+        '<option value="20">20</option>'+
+        '<option value="30">30</option>'+
+        '<option value="40">40</option>'+
+        '<option value="50">50</option>'+
+        '<option value="-1">All</option>'+
+        '</select> Registros',
+      "info": "Mostrando Página _PAGE_ de _PAGES_",
+      "infoEmpty":      "Mostrando 0 de _PAGES_ Registros",
+      "infoFiltered":   "(filtrado de _MAX_ registros totais)",
+      "decimal":        "",
+      "emptyTable":     "Sem dados disponíveis na tabela",
+      "zeroRecords":    "Nenhum registro correspondente encontrado",
+      "loadingRecords": "Carregando...",
+      "processing":     "Processando..."
+		}
+        });
+      } );
+    </script>
+
+</head>
+
+<!--Topo da Página-->
+<header>
+    <div id="menu">
+      <a href="#"><img class="logoMarca" src="../locoMarca.PNG" alt="MDN logo"></a>
+      <ul>
+        <li><a href="#">JOGOS</a>
+          <ul>
+            <li><a href="#">Monster Hunter Freedom</a></li>
+            <li><a href="#">Monster Hunter Portable 3rd</a></li>
+            <ul>
+              <li><a href="#">Monster Hunter Generations</a></li>
+            </ul>
+          </ul>
+         
+        </li>
+        <li><a href="#">MONSTROS</a></li>
+        <li><a href="#">ITENS</a></li>
+        <li><a href="#">EQUIPAMENTOS</a></li>
+        <li><a href="#">MULTIMÉDIA</a></li>
+        <li><a href="#">FEEDBACK</a></li>
+      </ul>
+    </div>
+</header>
+
+<!--Corpo da Página-->
+<body>
+  <div class='containerBloco'>
+     <div class='bloco'>
+       <div class="gameTopo">
+        <img class="logoMHFU" src="../gameLogos/MHFU.png">
+        <p class='cont'>ITENS & CRAFTING</p>
+       </div>
+      <hr color="darkgreen">
+      
+      <table id="listar_item" class="display" style="width:100%">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Comumente encontrado</th>
+          <th>Valor</th>
+          <th>Raridade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--POTION-->
+        <tr> 
+          <td><img class="items" src="./logoItens/potion.png"></td>
+          <td>Potion</td>
+          <td>Restaura uma pequena quantidade de saúde.</td>
+          <td>Combine Herb e Blue Mushroom ou compre na loja ou na loja da guilda</td>
+          <td>7z</td>
+          <td>1</td>
+        </tr>
+        <!--MEGA POTION-->
+        <tr>
+          <td><img class="items" src="./logoItens/potion.png"></td>
+          <td>Mega Potion</td>
+          <td>Restaura uma quantidade moderada de saúde.</td>
+          <td>Combine Potion e Honey.</td>
+          <td>16z</td>
+          <td>2</td>
+        </tr>
+        <!--NUTRIENTS-->
+        <tr>
+          <td><img class="items" src="./logoItens/nutrients.png"></td>
+          <td>Nutrients</td>
+          <td>Aumenta ligeiramente o nível máximo de saúde.</td>
+          <td>Combine Godbug e Blue Mushroom.</td>
+          <td>25z</td>
+          <td>2</td>
+        </tr>
+        <!--MEGA NUTRIENTS-->
+        <tr>
+          <td><img class="items" src="./logoItens/nutrients.png"></td>
+          <td>Mega Nutrients</td>
+          <td>Medicamento que aumenta o nível máximo de Saúde em uma pequena quantidade.</td>
+          <td>Combine Nutrients e Honey.</td>
+          <td>92z</td>
+          <td>3</td>
+        </tr>
+        <!--ANTIDOTE-->
+        <tr>
+          <td><img class="items" src="./logoItens/antidote.png"></td>
+          <td>Antidote</td>
+          <td>Remove eficazmente todos os vestígios de veneno do seu sistema.</td>
+          <td>Combine Antidote Herb e Blue Mushroom ou compre na loja da vila.</td>
+          <td>6z</td>
+          <td>1</td>
+        </tr>
+        <!--IMMUNIZER-->
+        <tr>
+          <td><img class="items" src="./logoItens/immunizer.png"></td>
+          <td>Immunizer</td>
+          <td>Medicamento que aumenta a capacidade de recuperação natural.</td>
+          <td>Combine Catalyst e Dragon Toadstool.</td>
+          <td>92z</td>
+          <td>3</td>
+        </tr>
+        <!--POWER JUICE-->
+        <tr>
+          <td><img class="items" src="./logoItens/immunizer.png"></td>
+          <td>Power Juice</td>
+          <td>Permite que você corra sem se cansar por um período de tempo.</td>
+          <td>Combine Rare Steak e Catalyst.</td>
+          <td>29z</td>
+          <td>2</td>
+        </tr>
+        <!--MEGA JUICE-->
+        <tr>
+          <td><img class="items" src="./logoItens/immunizer.png"></td>
+          <td>Mega Juice</td>
+          <td>Permite que você corra sem fadiga por ainda mais tempo do que Power Juice.</td>
+          <td>Combine Well-Done Steak e Power Extract.</td>
+          <td>205z</td>
+          <td>3</td>
+        </tr>
+        <!--DEMONDRUG-->
+        <tr>
+          <td><img class="items" src="./logoItens/demon-drug.png"></td>
+          <td>Demondrug</td>
+          <td>Aumenta o poder de ataque, conferindo a força do próprio Asura ao usuário.</td>
+          <td>Combine Power Seed e Catalyst.</td>
+          <td>67z</td>
+          <td>4</td>
+        </tr>
+        <!--MEGA DEMONDRUG-->
+        <tr>
+          <td><img class="items" src="./logoItens/demon-drug.png"></td>
+          <td>Mega Demondrug</td>
+          <td>Aumenta o poder de ataque ainda mais do que Demondrug.</td>
+          <td>Combine Demondrug e Pale Extract.</td>
+          <td>283z</td>
+          <td>5</td>
+        </tr>
+        <!--POWER PILL-->
+        <tr>
+          <td><img class="items2" src="./logoItens/power-pill.png"></td>
+          <td>Power Pill</td>
+          <td>Uma pílula de fortalecimento que lhe confere o poder de um deus feroz.</td>
+          <td>Combine Immunizer e Power Seed.</td>
+          <td>280z</td>
+          <td>1</td>
+        </tr>
+        <!--ARMORSKIN-->
+        <tr>
+          <td><img class="items" src="./logoItens/armor-skin.png"></td>
+          <td>Armorskin</td>
+          <td>Aumenta a defesa, tornando sua pele uma armadura de pedra.</td>
+          <td>Combine Catalyst e Armor Seed.</td>
+          <td>58z</td>
+          <td>4</td>
+        </tr>
+        <!--MEGA ARMORSKIN-->
+        <tr>
+          <td><img class="items" src="./logoItens/armor-skin.png"></td>
+          <td>Mega Armorskin</td>
+          <td>Aumenta a defesa ainda mais do que a Armonskin.</td>
+          <td>Combine Armorskin e Pale Extract.</td>
+          <td>269z</td>
+          <td>5</td>
+        </tr>
+        <!--ARMOR PILL-->
+        <tr>
+          <td><img class="items2" src="./logoItens/armor-pill.png"></td>
+          <td>Armor Pill</td>
+          <td>Uma pílula que temporariamente torna sua pele dura como metal.</td>
+          <td>Combine Immunizer e Armor Seed.</td>
+          <td>260z</td>
+          <td>1</td>
+        </tr>
+        <!--COOL DRINK-->
+        <tr>
+          <td><img class="items" src="./logoItens/cool-drink.png"></td>
+          <td>Cool Drink</td>
+          <td>Uma bebida que confere resistência temporária ao calor extremo.</td>
+          <td>Combine Bitterbug e Ice Cristal ou compre na loja e na loja da guilda.</td>
+          <td>30z</td>
+          <td>1</td>
+        </tr>
+        <!--HOT DRINK-->
+        <tr>
+          <td><img class="items" src="./logoItens/demon-drug.png"></td>
+          <td>Hot Drink</td>
+          <td>Uma bebida que confere resistência temporária ao frio extremo.</td>
+          <td>Combine Hot Pepper e Bitterbug ou compre na loja e na loja da guilda.</td>
+          <td>25z</td>
+          <td>1</td>
+        </tr>
+        <!--THAWING AGENT-->
+        <tr>
+          <td><img class="items2" src="./logoItens/thawing-agent.png"></td>
+          <td>Thawing Agent</td>
+          <td>Um agente químico que derrete a tundra congelada na alma.</td>
+          <td>Combine Fire Herb e Rumblefish.</td>
+          <td>10z</td>
+          <td>1</td>
+        </tr>
+        <!--PSYCHOSERUM-->
+        <tr>
+          <td><img class="items" src="./logoItens/armor-skin.png"></td>
+          <td>Psychoserum</td>
+          <td>Ativa temporariamente uma habilidade psíquica de sentir Wyverns.</td>
+          <td>Combine Cactus Flower e Thunderbug, pode ser comprado na loja.</td>
+          <td>30z</td>
+          <td>3</td>
+        </tr>
+        <!--HERBAL MEDICINE-->
+        <tr>
+          <td><img class="items2" src="./logoItens/herbal-medicine.png"></td>
+          <td>Herbal Medicine</td>
+          <td>Cura o veneno com eficácia e restaura uma pequena quantidade de saúde.</td>
+          <td>Combine Cactus Flower e Bitterbug.</td>
+          <td>25z</td>
+          <td>2</td>
+        </tr>
+        <!--MAX POTION-->
+        <tr>
+          <td><img class="items2" src="./logoItens/max-potion.png"></td>
+          <td>Max Potion</td>
+          <td>Restaura a saúde ao nível máximo, permitindo uma recuperação completa.</td>
+          <td>Combine Mega Nutrients e Dragon Toadstool. Recompensa comum de missões Kirin.</td>
+          <td>210z</td>
+          <td>3</td>
+        </tr>
+        <!--ANCIENT POTION-->
+        <tr>
+          <td><img class="items2" src="./logoItens/power-pill.png"></td>
+          <td>Ancient Potion</td>
+          <td>Restaura a saúde e a resistência aos níveis máximos, permitindo uma recuperação total.</td>
+          <td>Combine Immunizer e Kelbi Horn. Recompensa comum de missões Kirin.</td>
+          <td>345z</td>
+          <td>5</td>
+        </tr>
+        <!--ENERGY DRINK-->
+        <tr>
+          <td><img class="items" src="./logoItens/immunizer.png"></td>
+          <td>Energy Drink</td>
+          <td>Recupera o vigor e cura a fadiga. Aprovado pela Guilda.</td>
+          <td>Combine Sunset Herb e Honey.</td>
+          <td>6z</td>
+          <td>2</td>
+        </tr>
+        <!--LIFEPOWDER-->
+        <tr>
+          <td><img class="items2" src="./logoItens/herbal-medicine.png"></td>
+          <td>Lifepowder</td>
+          <td>Medicina criada combinando cristais de vida. Forte poder restaurador</td>
+          <td>Combine Lifecrystals e Wyvern Claw.</td>
+          <td>315z</td>
+          <td>4</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<!--Rodapé da Página-->
+ <footer>
+   <div class="rodape">
+     <div class="rodapeCop">
+       <p class="copright">© 2021 - 2022 <b>MHG</b> - Todos os direitos reservados.</p>
+     </div>
+   </div>
+ </footer>
+</html>
