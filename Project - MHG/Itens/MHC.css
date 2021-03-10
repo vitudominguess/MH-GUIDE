@@ -18,7 +18,7 @@ body {
    background-size: cover;
    background-attachment: fixed;
 }
-.containerBloco {
+.container {
     padding: 100px 0 50px 0;
     display: flex;
     align-items: center;
@@ -40,7 +40,6 @@ body {
 }
 table {
     border-collapse: collapse;
-    width: 60vw;
 }
 th {
     width: 50px;
@@ -71,7 +70,7 @@ hr {
 header {
     width: 100%;
     height: 56px;
-    position:  absolute;
+    position: absolute;
     background-color: rgb(19, 19, 19);
 }   
 #menu {
@@ -102,12 +101,15 @@ header {
 #menu ul li a:hover {
     color: forestgreen;
 }
-#menu ul ul{
-    position: absolute;
-    visibility: hidden;
+.dataTables_length {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
 }
-#menu ul li:hover ul{
-    visibility: visible;
+.dataTables_filter {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
 }
 .logoMarca {
     width: 150px;
@@ -118,19 +120,25 @@ header {
     height: 43px;  
 }
 .items2 {
+    padding-left: 4px;
     width: 32px;   
     height: 41px;  
 }
-.rodape {
-    background-color: rgb(15, 15, 15);
+footer {
+    margin: auto;
     width: 100%;
+    bottom: 0;
+    position: relative;
+}
+.footer {
     height: 150px;
+    background-color: rgb(15, 15, 15);
     display: flex;
     align-items: flex-end;
 }
-.rodapeCop {
+.rodape {
     height: 55px;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(7, 7, 7, 0.473);
     display: flex;
     justify-content: center;
