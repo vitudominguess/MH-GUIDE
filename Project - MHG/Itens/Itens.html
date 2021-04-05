@@ -11,44 +11,7 @@
     <link rel="stylesheet" type="text/css" href="">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
-
-    <!--DATA TABLE-->
-    <script type="text/javascript" language="javascript">
-      $(document).ready(function() {
-        $('#listar_item').DataTable({
-          "language": {
-      "search": "Buscar:",
-		  "paginate": {
-        "first": "Inicio",
-        "last": "Fim",
-			  "previous": "Anterior",
-			  "next": "Próximo"
-		  },
-      "aria": {
-        "sortAscending":  ": ative para classificar a coluna em ordem crescente",
-        "sortDescending": ": ative para classificar a coluna em ordem decrescente"
-      },
-      "lengthMenu": '<select>'+
-        '<option value="10">10</option>'+
-        '<option value="20">20</option>'+
-        '<option value="30">30</option>'+
-        '<option value="40">40</option>'+
-        '<option value="50">50</option>'+
-        '<option value="-1">All</option>'+
-        '</select> Registros',
-      "info": "Mostrando Página _PAGE_ de _PAGES_",
-      "infoEmpty":      "Mostrando 0 de _PAGES_ Registros",
-      "infoFiltered":   "(filtrado de _MAX_ registros totais)",
-      "decimal":        "",
-      "emptyTable":     "Sem dados disponíveis na tabela",
-      "zeroRecords":    "Nenhum registro correspondente encontrado",
-      "loadingRecords": "Carregando...",
-      "processing":     "Processando..."
-		}
-        });
-      } );
-    </script>
-
+    <script src="./scripts.js"></script>
 </head>
 
 <!--Topo da Página-->
@@ -69,13 +32,14 @@
 <!--Corpo da Página-->
 <body>
   <div class='container'>
-     <div class='bloco'>
+     <div class='bloco' spellcheck="false">
        <div class="gameTopo">
         <img class="logoMHFU" src="../gameLogos/MHFU.png">
         <p class='cont'>ITENS & CRAFTING</p>
        </div>
       <hr color="darkgreen">
       
+      <!--Tabela de Itens-->
       <table id="listar_item" class="display" style="width:100%">
         <thead>
         <tr>
@@ -298,14 +262,12 @@
         </tbody>
       </table>
     </div>
+    <!--Rodapé da Página-->
+    <div class="footer">
+      <div class="rodape">
+        <p class="copright">© 2021 - 2022 <b>MHG</b> - Todos os direitos reservados.</p>
+      </div>
+    </div>
   </div>
 </body>
-<!--Rodapé da Página-->
- <footer>
-   <div class="footer">
-     <div class="rodape">
-       <p class="copright">© 2021 - 2022 <b>MHG</b> - Todos os direitos reservados.</p>
-     </div>
-   </div>
- </footer>
 </html>
